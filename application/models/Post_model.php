@@ -4,8 +4,7 @@
  */
   class Post_model extends CI_Model
   {
-    public $id_user = '';
-
+    
     function __construct(){
       parent:: __construct();
     }

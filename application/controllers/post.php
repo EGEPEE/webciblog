@@ -19,22 +19,19 @@ class Post extends CI_Controller {
 		$data['post'] = $this->post_model->post_view_user($this->id_user)->result();
 		$this->load->view('post/post_list', $data);
 	}
+	
 	function tambah(){
 		$this->load->view('post/post_tambah');
 	}
 	function tambah_aksi(){
 		$judul = $this->input->post('judul');
-		$konten = $this->input->post('konten');
-		$tgl_post = $this->input->post('tgl_post');
-		$id_user = $this->id_user;
-		if($judul = "" && ($konten = "" || $tgl_post = "")){
-			$data = array('judul' => $judul , 'konten' => $konten , 'tgl_post' => $tgl_post , 'id_user' => $id_user );
+    $konten = $this->input->post('konten');
+    $tgl_post = $this->input->post('tgl_post');
+    $id_user = $this->id_user;
+    $data = array('judul' => $judul,'konten' => $konten, 'tgl_post' => $tgl_post, 'id_user' => $id_user);
 
-			$this->post_model->tambah_data($data,'post');
-			redirect('post');
-		}else{
-			redirect('post/tambah');
-		}
+    $this->post_model->tambah_data($data,'post');
+    redirect('post');
 	}
 	function edit($id){
 		$where = array('id_post' => $id);
