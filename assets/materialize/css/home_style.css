@@ -1,0 +1,24 @@
+body{
+  background-color: #22313F;
+}
+.container{
+  margin-top: 15px;
+}
+
+.isi{
+  height: 550px;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  padding-top : 20px;
+  text-align: center;
+}
+.footer{
+  height: 40px;
+  text-align: center;
+  color: white;
+  background-color: #e57373;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
