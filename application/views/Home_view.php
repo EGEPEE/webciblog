@@ -17,12 +17,12 @@
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="post">Daftar Posting</a></li>
-            <li><a href="about">About</a></li>
+            <li><a href="email">Email</a></li>
             <li><a href="home/logout">Logout</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li><a href="post" class="btn waves-effect  orange lighten-1">Daftar Posting</a></li>
-            <li><a href="about" class="btn waves-effect  orange lighten-1">About</a></li>
+            <li><a href="email" class="btn waves-effect  orange lighten-1">Email</a></li>
             <li><a href="home/logout" class="btn waves-effect  orange lighten-1">Logout</a></li>
           </ul>
         </div>
