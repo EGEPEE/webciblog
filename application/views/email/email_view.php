@@ -17,9 +17,13 @@
         <div class="isi">
           <form class="form" action="<?php echo base_url().'email/send_email';?>" method="post">
             <div class="row">
-              <div class="input-field col s11">
-                <input value="" type="email" class="validate" name="p_from">
-                <label class="active">From : </label>
+              <div class="input-field col s6">
+                <input value="<?php echo $this->session->userdata['logged_in']['nama']; ?>" type="text" for="disabled" class="validate" name="p_name">
+                <label class="active" for="disabled">Name : </label>
+              </div>
+              <div class="input-field col s6">
+                <input value="<?php echo $this->session->userdata['logged_in']['email']; ?>" type="text" id="disabled" class="validate" name="p_from">
+                <label class="active" for="disabled">From : </label>
               </div>
               <div class="input-field col s11">
                 <input value="" type="email" class="validate" name="p_to">
@@ -36,7 +40,7 @@
               <div class="input-field col s11">
                 <input type="submit" class="btn waves-effect  brown darken-1" value="SEND MESSAGE" style="float:right">
                 <div class="btn waves-effect  brown darken-1">
-                  <?php echo anchor('post', 'CANCEL'); ?>
+                  <?php echo anchor('home', 'CANCEL'); ?>
                 </div>
               </div>
             </div>
